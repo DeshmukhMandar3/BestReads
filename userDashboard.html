@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/userDashboard.css">
     <title>User Panel</title>
 </head>
 <body>
+    <div id="navbar">
+        <!-- navbar import here -->
+    </div>
+    <div id="main_div">
+        <h2>Your Dashboard</h2>
+        <div id="container">
+
+            <div id="left">
+                <!-- side options  -->
+                <ul id="btn">
+                   <li class="btn_container"><button onclick="tabSwitch(0,)">Home</button></li>
+                   <li class="btn_container"><button onclick="tabSwitch(1)">New Product</button></li>
+                   <li class="btn_container"><button onclick="tabSwitch(2)">Product</button></li>
+                   <li class="btn_container"><button onclick="tabSwitch(3)">Credits</button></li>
+                <ul/>
+            </div>
+            <div id="right">
+                <h2>Welcome!</h2>
+                <button id="addNew">Upload New Product</button>
+                <div id="data">
+                    <div id="approved" class="status">app</div>
+                    <div id="reviewe" class="status">reviwe</div>
+                    <div id="faild" class="status">not approved</div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
     
 </body>
 </html>
