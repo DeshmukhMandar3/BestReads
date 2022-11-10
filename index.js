@@ -108,7 +108,7 @@ const append = (data) => {
     const see_details=(el)=>{
         let bookdetails=el;
         localStorage.setItem("bookdetails",JSON.stringify(bookdetails));
-        window.open("./details.html","_self");
+        window.open("./Productpage.html","_self");
     }
 
     //Selecting Genre
