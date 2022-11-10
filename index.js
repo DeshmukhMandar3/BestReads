@@ -102,88 +102,11 @@ const append = (data) => {
         
     })
 
-
-}
-
-//This will show data on new page
-const see_details = (el) => {
-    let bookdetails = el;
-    localStorage.setItem("bookdetails", JSON.stringify(bookdetails));
-    window.open("./details.html", "_self");
-}
-
-
-//Selecting Genre
-let sub = document.querySelector(".sub");
-let action = document.querySelector(".action");
-
-action.onclick = () => {
-    colorIt(action);
-    getByCategory("action");
-
-}
-let classic = document.querySelector(".classic");
-classic.onclick = () => {
-    colorIt(classic);
-    getByCategory("classic");
-}
-let Mystery = document.querySelector(".Mystery");
-Mystery.onclick = () => {
-    colorIt(Mystery);
-    getByCategory("mystery");
-}
-let Fantasy = document.querySelector(".Fantasy");
-Fantasy.onclick = () => {
-    colorIt(Fantasy);
-    getByCategory("fantasy")
-}
-let History = document.querySelector(".History");
-History.onclick = () => {
-    colorIt(History);
-    getByCategory("history");
-}
-let Horror = document.querySelector(".Horror");
-Horror.onclick = () => {
-    colorIt(Horror);
-    getByCategory("horror");
-}
-let Romance = document.querySelector(".Romance");
-Romance.onclick = () => {
-    colorIt(Romance);
-    getByCategory("romance");
-}
-let sci_fi = document.querySelector(".Sci-fi");
-sci_fi.onclick = () => {
-    colorIt(sci_fi);
-    getByCategory("sciencefiction");
-}
-let Thriller = document.querySelector(".Thriller");
-Thriller.onclick = () => {
-    colorIt(Thriller);
-    getByCategory("thriller");
-}
-let biography = document.querySelector(".biography");
-biography.onclick = () => {
-    colorIt(biography);
-    getByCategory("biography");
-}
-
-//This will change color of Sub-navbar
-const colorIt = (id) => {
-    let arr = [action, classic, Mystery, Fantasy, History, Horror, Romance, sci_fi, Thriller, biography];
-    arr.forEach((el) => {
-        el.style.backgroundColor = "rgb(57, 54, 54)";
-        el.style.color = "white";
-    });
-    id.style.backgroundColor = "white";
-    id.style.color = "black"
-}
-//This will search data as per subject
-const getByCategory =async(el) => {
-    let res=await fetch(`https://www.googleapis.com/books/v1/volumes?q=+subject:${el}&key=AIzaSyBPyy1Lx0veEyDixS2W3lh5qgCBOIZqb_c&&maxResults=40&&orderBy=relevance`);
-    let data=await res.json();
-    console.log(data.items);
-    append(data.items);
     
-}
+    }
 
+    const see_details=(el)=>{
+        let bookdetails=el;
+        localStorage.setItem("bookdetails",JSON.stringify(bookdetails));
+        window.open("./details.html","_self");
+    }
