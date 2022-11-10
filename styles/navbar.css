@@ -112,3 +112,12 @@ body{
 
 .signIn-ddn a:hover{background-color:white;}
 .show{display:block;}
+
+#ham{
+    color:white;
+    position:absolute;
+    right:10px;
+    top:5px;
+    display:none;
+}
+

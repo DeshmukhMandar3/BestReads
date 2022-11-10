@@ -8,7 +8,7 @@ function navbar_fn(){
         <input type="text" id="search_book" placeholder="Search">
         <button id="search_btn"><span class="material-symbols-outlined">search</span></button>
     </div>
-    <div id="links">
+    <div id="links" class="links">
         <a href="">About</a>
         <a href="">Contact</a>
         <div class="sign" id="sign">
@@ -30,9 +30,10 @@ function navbar_fn(){
                 <a href="">Notification</a>
                 <a href="">Sign Out</a>
             </div>
-        </div>
-        
-    </div>`
+        </div> 
+    </div>
+    <div id="ham"><span class="material-symbols-outlined">menu</span></div>
+    `
 }
 //create div with navbar id as well as class and append this data
 export {navbar_fn};
