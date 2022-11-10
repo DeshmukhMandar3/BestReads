@@ -1,0 +1,19 @@
+{
+  "name": "past-underwear-3653",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeshmukhMandar3/past-underwear-3653.git"
+  },
+  "author": "Mohammad Rizwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeshmukhMandar3/past-underwear-3653/issues"
+  },
+  "homepage": "https://github.com/DeshmukhMandar3/past-underwear-3653#readme",
+  "description": ""
+}
