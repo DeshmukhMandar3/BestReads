@@ -105,7 +105,7 @@ label{
     
 
 }
-#pro-tab>.table{
+table {
     width: 100%;
     margin: 20px;
 
@@ -137,11 +137,12 @@ label{
     font-size: 18px;
    box-sizing: border-box;
     margin-top: 20px;
+    border-right: 1px solid ;
 
 }
 .btn_container>button{
     border: none;
-    padding: 12px;
+    padding: 10px;
     box-sizing: border-box;
     font-size: 18px;
     background: none;

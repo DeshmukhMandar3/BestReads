@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    [
+      {
+        "name": "hack the google ",
+        "exp": "One rule of local Git branch deletion is that you cannot delete a branch that is currently checked out. Otherwise, you run into the ‘cannot delete branch’ error as you can see in the example below:",
+        "thumbnil": "https://i.ibb.co/hFK0fnm/D88914-C1-F990-4032-B90-B-D652-B3-C5-FB0-F.png",
+        "platform": "Online",
+        "website": "Flipkart"
+      }
+    ],
+    [
+      {
+        "id": 1668113240540,
+        "name": "the art of exploitation",
+        "exp": "Hacking: The Art of Exploitation is a book written by Jon Erickson. In this book, you will learn the fundamentals of C programming from a hacker’s perspective.\n\nYou will also know hacking techniques like overflowing buffers, hijacking network communications. You will also learn about bypassing protections, exploiting, etc. The book will give a complete picture of programming, network communications, etc.",
+        "thumbnil": "https://i.ibb.co/WgjM8GV/AF9-FF105-D48-E-4-C41-B67-B-B672204-D7-EA7.png",
+        "platform": "Online",
+        "website": "Flipkart"
+      }
+    ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
