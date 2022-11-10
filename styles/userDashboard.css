@@ -145,6 +145,7 @@ label{
     box-sizing: border-box;
     font-size: 18px;
     background: none;
+    min-width: 130px;
     color: #337ab7;
     
     
