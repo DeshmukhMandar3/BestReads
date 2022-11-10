@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="signup.css">
+
+<body>
+    <div class="container" style="">
+        <h2>Sign up</h2>
+        <form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post">
+
+            <div class="form-group">
+                <label for="user_name">Name</label>
+                <input autofocus="autofocus" class="form-control" required="required" type="text" name="user[name]"
+                    id="user_name" />
+            </div>
+            <div class="form-group">
+                <label for="user_Mobile Number">Mobile number</label>
+                <input autofocus="autofocus" class="form-control" required="required" type="text"
+                    name="user[mobile_number]" id="user_mobile_number" />
+            </div>
+            <div class="form-group">
+                <label for="user_email">Email</label>
+                <input autofocus="autofocus" class="form-control" required="required" type="email" value=""
+                    name="user[email]" id="user_email" />
+            </div>
+            <div class="form-group">
+                <label for="user_password">Password</label>
+                <em>(6 characters minimum)</em>
+                <br />
+                <input autocomplete="off" class="form-control" required="required" type="password" name="user[password]"
+                    id="user_password" />
+            </div>
+            <div class="form-group">
+                <label for="user_password_confirmation">Password confirmation</label>
+                <input autocomplete="off" class="form-control" required="required" type="password"
+                    name="user[password_confirmation]" id="user_password_confirmation" />
+            </div>
+            <div class="actions">
+                <input type="submit" name="commit" value="Sign up" class="btn btn-success"
+                    data-disable-with="Sign up" />
+            </div>
+        </form>
+        <a href="authsign_in.html">Log in</a><br />
+        <div class="gettoknow">
+            <h4>Get To Know Us</h4>
+            <ul>
+                <li><a href="/about">About </a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/search">Search</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/refund-policy">Refund Policy</a></li>
+                <li><a href="/make-money">Earn Money Online</a></li>
+                <li><a href="https://www.quickbuyer.in" target="_blank">QuickBuyer</a></li>
+            </ul>
+        </div>
+
+</body>
+
+</html>
