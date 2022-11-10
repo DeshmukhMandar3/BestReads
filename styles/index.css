@@ -43,3 +43,23 @@
 .rating{
     font-size:15px;
 }
+
+.sub{
+    background-color: rgb(57, 54, 54);
+    display:flex;
+    justify-content: center;
+    color:white;
+    height:35px;
+    align-items:center;
+    font-size:15px;
+    margin-bottom:10px;
+}
+.sub>div{
+    border:none;
+    padding-left:10px;
+    padding-right:10px;
+    height:35px;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
