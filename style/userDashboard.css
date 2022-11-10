@@ -23,12 +23,62 @@ body{
     
 
 }
+ /* nav tab items */
 #right{
     width: 80%;
+    display: none;
 
     
    
 }
+#upload{
+    width: 80%;
+    margin: auto;
+    display: none;
+
+
+}
+.form-control{
+   width: 50vmax;
+   padding: 10px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   border-radius: 8px;
+
+
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 10px;
+    margin-bottom: 20px;
+   
+}
+#addMedia{
+    margin-top: 10px;
+    color: #337ab7;
+    background: none ;
+    border: none;
+}
+#addMedia:hover{
+    text-decoration: underline;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: e9e9ed;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: #e9e9ed ;
+    opacity: 10;
+}
+
 #addNew{
     background:#337ab7;
     padding: 15px;
@@ -45,6 +95,38 @@ body{
   
   
 }
+/* form end  */
+  
+
+/* new product start here  */
+#pro-tabl{
+   
+    display: none;
+    
+
+}
+#pro-tab>.table{
+    width: 100%;
+    margin: 20px;
+
+}
+
+
+/* product container end  */
+/* credit part  */
+#credit{
+    font-family: sans-serif;
+    display: none;
+    margin-top: 20px;
+}
+#credit>p>a{
+    text-decoration: none;
+    color: #337ab7;
+}
+#credit>p>a:hover{
+    text-decoration: underline;
+}
+
 .btn_container{
     list-style: none;
     border: none;
@@ -69,8 +151,7 @@ body{
 }
 .btn_container>button:hover{
     background: #f2f2f2;
-    color: white;
-
+    
 
 }
 
@@ -94,7 +175,7 @@ body{
     height: 180px;
     border: 1px;
     background: green;
-    color: white;
+    color: #f2f2f2;
     font-size: 18px;
 }
 #faild{
@@ -108,3 +189,4 @@ body{
     background: orange;
    
 }
+

@@ -1,0 +1,112 @@
+body{
+    margin:0px;
+    font-family: Arial;
+}
+#navbar{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height:35px;
+    align-items: center;
+}
+#logo{
+    height:100%;
+}
+#logo>img{
+   height:100%;
+}
+#search_div{
+    display:flex;
+    height:25px;
+}
+#search_book{
+    width:300px;
+    border:0px; 
+    outline:none;  
+}
+#search_btn{
+    border-radius: 0px;
+    border:0px;
+    cursor: pointer;
+    
+}
+#links{
+    width:350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    font-size:13px;
+    color: white
+}
+
+
+#log-name{
+    border:none;
+    background-color: black;
+    color:white;
+    margin:0px;
+    
+}
+
+.ddn-name{
+    height:100%;
+    display:flex;
+    color:white;
+    justify-content: space-around;
+    border:solid white;
+    cursor: pointer;
+    position: relative;
+    display:none; 
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 152px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown-content a:hover {background-color:white;}
+
+
+
+#SignIn{
+    background-color:black;
+    color:white;
+    cursor:pointer;
+    position:relative;
+    border: none;
+}
+
+.signIn-ddn{
+    position:absolute;
+    display:none;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 80px;
+    overflow:auto;
+}
+
+.signIn-ddn a{
+    display:block;
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.signIn-ddn a:hover{background-color:white;}
+.show{display:block;}
