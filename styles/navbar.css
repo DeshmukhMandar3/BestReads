@@ -43,9 +43,7 @@ body{
 }
 
 
-.sign{
-    /* display:none; */
-}
+
 #log-name{
     border:none;
     background-color: black;
@@ -92,6 +90,9 @@ body{
     color:white;
     cursor:pointer;
     position:relative;
+
+    border: none;
+
 }
 
 .signIn-ddn{
@@ -111,6 +112,7 @@ body{
 }
 
 .signIn-ddn a:hover{background-color:white;}
+
 .show{display:block;}
 
 #ham{
@@ -120,4 +122,5 @@ body{
     top:5px;
     display:none;
 }
+
 
