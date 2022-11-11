@@ -38,6 +38,7 @@ if (local_name != null) {
 const getIt = async () => {
     let res = await fetch("https://www.googleapis.com/books/v1/volumes?q=+subject:fantasy&key=AIzaSyBPyy1Lx0veEyDixS2W3lh5qgCBOIZqb_c&&maxResults=40&&orderBy=relevance");
     let data = await res.json();
+    console.log(data.items)
     append(data.items);
 }
 
@@ -184,3 +185,4 @@ const getByCategory =async(el) => {
     append(data.items);
     
 }
+
