@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot password</title>
+    <link rel="stylesheet" href="auth_signin.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Forgot your password?</h2>
+        <form class="new_user" id="new_user" action="/users/password" accept-charset="UTF-8" method="post"><input
+                name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token"
+                value="MwQ0wS/ASbJN193ldBZBZ6lO9YuJijVVuGarh5IBuYwrLOYthTgI4WlXXx5CEVG2G0mV5pkoyZekOlF6uHq+wQ==" />
+            <div class="form-group">
+                <label for="user_email">Email</label>
+                <input autofocus="autofocus" required="required" class="form-control" type="email" value=""
+                    name="user[email]" id="user_email" />
+            </div>
+            <div class="actions form-group">
+                <input type="submit" name="commit" value="Send me reset password instructions" class="btn btn-success"
+                    data-disable-with="Send me reset password instructions" />
+            </div>
+        </form>
+        <a href="./auth_signin.html">Log in</a>
+        <a href="./auth_signup.html">Sign up</a>
+
+
+
+        <div class="gettoknow">
+            <h4>Get To Know Us</h4>
+            <ul>
+                <li><a href="/about">About </a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/search">Search</a></li>
+                <li><a href="./privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="/make-money">Earn Money Online</a></li>
+                <li><a href="https://www.quickbuyer.in" target="_blank">QuickBuyer</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
