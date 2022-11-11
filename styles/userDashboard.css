@@ -110,6 +110,9 @@ table {
     margin: 20px;
 
 }
+td{
+    max-width: 150px;
+}
 
 
 /* product container end  */

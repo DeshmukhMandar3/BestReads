@@ -61,26 +61,84 @@ const getData=async(e)=>{
         name:form.name.value,
         exp:form.exp.value,
         thumbnil:imgUrl,
+        status:false,
         platform:form.platform.value,
         website:form.shop.value,
     }
-    var arr=[];
-    arr.push(obj);
+   form.name=null;
+   form.exp=null;
+   form.file=null;
  let res= await fetch('http://localhost:3000/posts',{
     method: 'POST',
-    body:JSON.stringify(arr),
+    body:JSON.stringify(obj),
     headers:{
         'Content-Type': 'application/json',
 
     },
  });
  let data=await res.json();
- console.log(data);
+ //console.log(data);
     
     
 }
 
 // form function end 
+// products start 
+let body=document.getElementsByName('tbody');
+const showData=async()=>{
+    let res=await fetch(' http://localhost:3000/posts')
+    let data= await res.json();
+    console.log(data);
+    
+   append(data);
+
+    
+
+
+}
+
+showData();
+let tb=document.querySelector('tbody');
+const append=(data)=>{
+    tb.innerHTML=null;
+    data.forEach((el)=>{
+        let tr=document.createElement('tr');
+    let name=document.createElement('td');
+    name.innerText=el.name;
+    let media=document.createElement('td');
+    let img=document.createElement('href');
+    img.innerText=el.thumbnil;
+    media.append(img);
+    let dsc=document.createElement('td');
+    dsc.innerText=el.exp;
+    let status=document.createElement('td');
+    status.innerText=el.status;
+    tr.append(name,media,dsc,status);
+    tb.append(tr);
+
+    });
+    
+}
+// products  end here 
+// statusbar items 
+const getStatus=async()=>{
+    let apr=document.getElementById('approved');
+    let res = await fetch('http://localhost:3000/posts')
+    let data= await res.json();
+    let count=0;
+    data.forEach((el)=>{
+        if(el.status)
+        {
+            count++;
+        }
+    });
+
+    let tPost=count+"/"+data.length+" " + 'Approved';
+    apr.append(tPost);
+
+}
+getStatus();
+
 
 
 
