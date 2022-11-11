@@ -1,3 +1,6 @@
+
+    // navbar code snippet end
+
 import { navbar_fn } from "./components/navbar.js"
 let nav_div = document.getElementById("navbar");
 nav_div.innerHTML = navbar_fn();
@@ -186,3 +189,11 @@ const getByCategory =async(el) => {
     
 }
 
+// localStorage.setItem("local_name","Mandar Deshmukh");
+
+let si_out=document.getElementById("sign_out");
+si_out.onclick=()=>{
+    localStorage.clear();
+}
+//below link can be used to search books on amazon
+//https://www.amazon.in/s?k=tata&i=stripbooks&crid=1GRG4STLEHUCM&sprefix=shivaji%2Cstripbooks%2C351&ref=nb_sb_noss_1
