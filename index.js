@@ -184,3 +184,12 @@ const getByCategory =async(el) => {
     append(data.items);
     
 }
+
+// localStorage.setItem("local_name","Mandar Deshmukh");
+
+let si_out=document.getElementById("sign_out");
+si_out.onclick=()=>{
+    localStorage.clear();
+}
+//below link can be used to search books on amazon
+//https://www.amazon.in/s?k=tata&i=stripbooks&crid=1GRG4STLEHUCM&sprefix=shivaji%2Cstripbooks%2C351&ref=nb_sb_noss_1
