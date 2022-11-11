@@ -43,12 +43,10 @@ body{
 }
 
 
-<<<<<<< HEAD
-.sign{
-    /* display:none; */
-}
-=======
->>>>>>> structuring and styling completed
+
+
+
+
 #log-name{
     border:none;
     background-color: black;
@@ -95,10 +93,9 @@ body{
     color:white;
     cursor:pointer;
     position:relative;
-<<<<<<< HEAD
-=======
+
     border: none;
->>>>>>> structuring and styling completed
+
 }
 
 .signIn-ddn{
@@ -118,7 +115,7 @@ body{
 }
 
 .signIn-ddn a:hover{background-color:white;}
-<<<<<<< HEAD
+
 .show{display:block;}
 
 #ham{
@@ -129,6 +126,6 @@ body{
     display:none;
 }
 
-=======
+
 .show{display:block;}
->>>>>>> structuring and styling completed
+
