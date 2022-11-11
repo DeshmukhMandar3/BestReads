@@ -26,11 +26,7 @@ function navbar_fn() {
                 <a href="" class="sign">Sign In as Admin</a>
             </div>
         </div>
-
-
         <a href="./authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
-
-
         <div class="dropdown">
             <div class="ddn-name">
                 <button id="log-name"></button>
