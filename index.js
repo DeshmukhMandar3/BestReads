@@ -1,3 +1,6 @@
+
+    // navbar code snippet end
+
 import { navbar_fn } from "./components/navbar.js"
 let nav_div = document.getElementById("navbar");
 nav_div.innerHTML = navbar_fn();
