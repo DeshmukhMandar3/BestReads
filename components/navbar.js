@@ -1,5 +1,7 @@
 
+
 function navbar_fn() {
+
 
     return `<!-- /* On sign in change the property of ddn-name class to display block */ -->
     <!-- /* On sign in change the property of sign class to display none */ -->
@@ -11,11 +13,13 @@ function navbar_fn() {
         <button id="search_btn"><span class="material-symbols-outlined">search</span></button>
     </div>
 
+
     <div id="links" class="links">
         <a href="">About</a>
         <a href="">Contact</a>
         <div class="sign" id="sign">
             <button id="SignIn">Sing In</button>
+
 
             <div id="signIn-ddn" class="signIn-ddn">
                 <a href="" class="sign">Sign In as Customer</a>
@@ -23,7 +27,9 @@ function navbar_fn() {
             </div>
         </div>
 
+
         <a href="./authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
+
 
         <div class="dropdown">
             <div class="ddn-name">
@@ -37,6 +43,7 @@ function navbar_fn() {
                 <a href="">Sign Out</a>
             </div>
 
+
         </div> 
     </div>
     <div id="ham"><span class="material-symbols-outlined">menu</span></div>
@@ -44,4 +51,5 @@ function navbar_fn() {
 }
 //create div with navbar id as well as class and append this data
 export { navbar_fn };
+
 
