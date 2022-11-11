@@ -123,18 +123,24 @@ const append=(data)=>{
 // statusbar items 
 const getStatus=async()=>{
     let apr=document.getElementById('approved');
+    let faild=document.getElementById('faild');
+    let review=document.getElementById('reviewe');
     let res = await fetch('http://localhost:3000/posts')
     let data= await res.json();
     let count=0;
+    let c=0;
     data.forEach((el)=>{
         if(el.status)
         {
             count++;
         }
+        else c++;
     });
-
+    faild.innerText=0+' '+'Could not Pass Review';
+    review.innerText=c+' '+'Under Review';
     let tPost=count+"/"+data.length+" " + 'Approved';
     apr.append(tPost);
+
 
 }
 getStatus();

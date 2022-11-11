@@ -19,7 +19,7 @@ body{
 #left{
     display: flex;
     width: 20%;
-    padding:5px;
+    padding-right: 10px;
     
 
 }
@@ -68,7 +68,7 @@ label{
     font-size: 16px;
     font-weight: 400;
     border: none;
-    background: e9e9ed;
+    background: #e9e9ed;
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -108,10 +108,13 @@ label{
 table {
     width: 100%;
     margin: 20px;
+    border: 1px solid;
 
 }
-td{
+td,th{
     max-width: 150px;
+    text-align: center;
+    border: 1px solid;
 }
 
 
@@ -181,7 +184,8 @@ td{
     border: 1px;
     background: green;
     color: #f2f2f2;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
 }
 #faild{
 
@@ -194,4 +198,34 @@ td{
     background: orange;
    
 }
+/* footer style  */
+.gettoknow {
+    border: 0px solid red;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 50px;
+    line-height: 1.5;
+}
 
+.gettoknow>h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 18px;
+}
+
+.gettoknow>ul {
+    padding-inline-start: 40px;
+    text-align: left;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #337ab7;
+
+
+}
