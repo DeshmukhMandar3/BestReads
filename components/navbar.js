@@ -1,4 +1,4 @@
-function navbar_fn(){
+function navbar_fn() {
     return `<!-- /* On sign in change the property of ddn-name class to display block */ -->
     <!-- /* On sign in change the property of sign class to display none */ -->
     <div id="logo">
@@ -18,7 +18,7 @@ function navbar_fn(){
                 <a href="" class="sign">Sign In as Admin</a>
             </div>
         </div>
-        <a href="" class="sign" id="sign-up">Sign Up</a>
+        <a href="./authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
         <div class="dropdown">
             <div class="ddn-name">
                 <button id="log-name"></button>
@@ -36,4 +36,4 @@ function navbar_fn(){
     `
 }
 //create div with navbar id as well as class and append this data
-export {navbar_fn};
+export { navbar_fn };
