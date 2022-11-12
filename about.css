@@ -69,3 +69,7 @@ p{
    #container{grid-template-columns:repeat(2,1fr);}
    .sub{display:none;}
   }
+
+#navbar{
+    position: relative;
+}
