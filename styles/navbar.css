@@ -3,14 +3,21 @@ body{
     font-family: Arial;
 }
 #navbar{
+    width:100%;
     display:flex;
     justify-content: space-evenly;
     background-color: black;
     height:35px;
     align-items: center;
+    position: fixed;
+    z-index:3;
+   
 }
 #logo{
     height:100%;
+}
+#logo:hover{
+    cursor: pointer;
 }
 #logo>img{
    height:100%;
@@ -30,7 +37,7 @@ body{
     cursor: pointer;
     
 }
-#links{
+.links{
     width:350px;
     display: flex;
     justify-content: space-between;
@@ -43,9 +50,10 @@ body{
 }
 
 
-.sign{
-    /* display:none; */
-}
+
+
+
+
 #log-name{
     border:none;
     background-color: black;
@@ -92,6 +100,7 @@ body{
     color:white;
     cursor:pointer;
     position:relative;
+    border: none;
 }
 
 .signIn-ddn{
@@ -108,12 +117,13 @@ body{
     color:black;
     padding: 12px 16px;
     text-decoration: none;
+    
 }
 
 .signIn-ddn a:hover{background-color:white;}
 .show{display:block;}
 
-#ham{
+.ham{
     color:white;
     position:absolute;
     right:10px;
@@ -121,3 +131,13 @@ body{
     display:none;
 }
 
+@media all and (max-width: 750px) and (min-width:300px) {
+     #links{flex-wrap:wrap;}
+     #navbar{
+    width:100%;
+    height:auto;
+    position: relative;}
+     #logo{width:5%;}
+     #logo>img{width:100%;}
+     #search_book{width:auto;}
+   }

@@ -1,3 +1,6 @@
+
+    // navbar code snippet end
+
 import { navbar_fn } from "./components/navbar.js"
 let nav_div = document.getElementById("navbar");
 nav_div.innerHTML = navbar_fn();
@@ -38,6 +41,7 @@ if (local_name != null) {
 const getIt = async () => {
     let res = await fetch("https://www.googleapis.com/books/v1/volumes?q=+subject:fantasy&key=AIzaSyBPyy1Lx0veEyDixS2W3lh5qgCBOIZqb_c&&maxResults=40&&orderBy=relevance");
     let data = await res.json();
+    console.log(data.items)
     append(data.items);
 }
 
@@ -184,3 +188,12 @@ const getByCategory =async(el) => {
     append(data.items);
     
 }
+
+// localStorage.setItem("local_name","Mandar Deshmukh");
+
+let si_out=document.getElementById("sign_out");
+si_out.onclick=()=>{
+    localStorage.clear();
+}
+//below link can be used to search books on amazon
+//https://www.amazon.in/s?k=tata&i=stripbooks&crid=1GRG4STLEHUCM&sprefix=shivaji%2Cstripbooks%2C351&ref=nb_sb_noss_1

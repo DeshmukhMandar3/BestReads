@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main_div{
+    width: 80%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#container{
+    display: flex;
+    
+    
+
+}
+#left{
+    display: flex;
+    width: 20%;
+    padding-right: 10px;
+    
+
+}
+ /* nav tab items */
+#right{
+    width: 80%;
+    display: none;
+
+    
+   
+}
+#upload{
+    width: 80%;
+    margin: auto;
+    display: none;
+
+
+}
+.form-control{
+   width: 50vmax;
+   padding: 10px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   border-radius: 8px;
+
+
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 10px;
+    margin-bottom: 20px;
+   
+}
+#addMedia{
+    margin-top: 10px;
+    color: #337ab7;
+    background: none ;
+    border: none;
+}
+#addMedia:hover{
+    text-decoration: underline;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: #e9e9ed;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: #e9e9ed ;
+    opacity: 10;
+}
+
+#addNew{
+    background:#337ab7;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#btn{
+   margin-top: 30px;
+  border-right: 1px ;
+  list-style: none;
+  
+  
+}
+/* form end  */
+  
+
+/* new product start here  */
+#pro-tabl{
+   
+    display: none;
+    
+
+}
+table {
+    width: 100%;
+    margin: 20px;
+    border: 1px solid;
+
+}
+td,th{
+    max-width: 150px;
+    text-align: center;
+    border: 1px solid;
+}
+
+
+/* product container end  */
+/* credit part  */
+#credit{
+    font-family: sans-serif;
+    display: none;
+    margin-top: 20px;
+}
+#credit>p>a{
+    text-decoration: none;
+    color: #337ab7;
+}
+#credit>p>a:hover{
+    text-decoration: underline;
+}
+
+.btn_container{
+    list-style: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+   box-sizing: border-box;
+    margin-top: 20px;
+    border-right: 1px solid ;
+
+}
+.btn_container>button{
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background: none;
+    min-width: 130px;
+    color: #337ab7;
+    
+    
+}
+.btn_container>button:hover{
+    background: #f2f2f2;
+    
+
+}
+
+.s_btn{
+    margin-top: 20px;
+    height: 30px;
+    font-size: 18px;
+}
+#data{
+    display: flex;
+
+}
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 280px;
+    height: 180px;
+    border: 1px;
+    background: green;
+    color: #f2f2f2;
+    font-size: 20px;
+    text-align: center;
+}
+#faild{
+
+    background: red;
+
+}
+#reviewe{
+
+
+    background: orange;
+   
+}
+/* footer style  */
+.gettoknow {
+    border: 0px solid red;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 50px;
+    line-height: 1.5;
+}
+
+.gettoknow>h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 18px;
+}
+
+.gettoknow>ul {
+    padding-inline-start: 40px;
+    text-align: left;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #337ab7;
+
+
+}

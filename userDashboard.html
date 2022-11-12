@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/userDashboard.css">
+    <link rel="stylesheet" href="/styles/userDashboard.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>User Panel</title>
 </head>
+
 <body>
-    <div id="navbar">
+    <div id="navbar" class="navbar">
         <!-- navbar import here -->
     </div>
     <div id="main_div">
@@ -18,26 +23,94 @@
             <div id="left">
                 <!-- side options  -->
                 <ul id="btn">
-                   <li class="btn_container"><button onclick="tabSwitch(0,)">Home</button></li>
-                   <li class="btn_container"><button onclick="tabSwitch(1)">New Product</button></li>
-                   <li class="btn_container"><button onclick="tabSwitch(2)">Product</button></li>
-                   <li class="btn_container"><button onclick="tabSwitch(3)">Credits</button></li>
-                <ul/>
+                    <li class="btn_container"><button onclick="tabSwitch(0,'#7b7b7b')">Home</button></li>
+                    <li class="btn_container"><button onclick="tabSwitch(1,'#7b7b7b')">New Product</button></li>
+                    <li class="btn_container"><button onclick="tabSwitch(2,'#7b7b7b')">Product</button></li>
+                    <li class="btn_container"><button onclick="tabSwitch(3, '#7b7b7b')">Credits</button></li>
+                </ul>
             </div>
-            <div id="right">
-                <h2>Welcome!</h2>
-                <button id="addNew">Upload New Product</button>
-                <div id="data">
-                    <div id="approved" class="status">app</div>
-                    <div id="reviewe" class="status">reviwe</div>
-                    <div id="faild" class="status">not approved</div>
+            <div id="home">
+                <div id="right" class="nav-tab">
+                    <h2>Welcome!</h2>
+                    <button onclick="tabSwitch(1,'#7b7b7b')" id="addNew">Upload New Product</button>
+                    <div id="data">
+                        <div id="approved" class="status"></div>
+                        <div id="reviewe" class="status"></div>
+                        <div id="faild" class="status">not approved</div>
+                    </div>
+                </div>
+
+                <div id="upload" class="nav-tab">
+                    <h2>New Review</h2>
+                    <form action="">
+                        <label for="">Name</label><br>
+                        <textarea minlength="10" type="text-area" name="" id="name" class="form-control"></textarea><br>
+                        <label for="">Your experience</label><br>
+                        <textarea minlength="50" type="text-area" name="" id="exp" class="form-control"></textarea><br>
+                        <label for="">File</label><br>
+                        <input type="file" name="" id="file"><br>
+                        <button id="addMedia">Add Media</button><br>
+                        <label for=""> Did you bought it online or offline </label><br>
+                        <select name="platform" id="platform" class="form-control">
+                            <option value="Online">Online</option>
+                            <option value="Offline">Offline</option>
+                        </select><br>
+                        <label>Platform</label><br>
+                        <select class="form-control" name="" id="shop">
+                            <option value="">Select Platform</option>
+                            <option value="Amazon">Amazon</option>
+                            <option value="Flipkart">Flipkart</option>
+                            <option value="SnapDeal">SnapDeal</option>
+                            <option value="ShopClues">ShopClues</option>
+                            <option value="RelianceDigital">RelianceDigital</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="actions">
+                            <input onclick="getData(event)" type="submit" name="commit" value="Submit" class="btn"
+                                id="submit" />
+                        </div>
+                    </form>
+                </div>
+                <div id="pro-tabl" class="nav-tab">
+                    <h2>Products</h2>
+                    <table class="table">
+                        <thead>
+                            <th>Name</th>
+                            <th>Media</th>
+                            <th>How to use</th>
+                            <th>Approval Status</th>
+                            <thead>
+
+                            <tbody>
+
+                                <!-- append data here  -->
+                            </tbody>
+                    </table>
+                </div>
+                <div id="credit" class="nav-tab">
+                    <h2>Credits</h2>
+                    <p>The amount credited to your account will be shown here!<br>
+
+                        You can update your account Info <a href="#">here</a> </p>
                 </div>
             </div>
-            
-
 
         </div>
+        <div class="gettoknow">
+            <h4>Get To Know Us</h4>
+            <ul>
+                <li><a href="/about">About </a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/search">Search</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/refund-policy">Refund Policy</a></li>
+                <li><a href="/make-money">Earn Money Online</a></li>
+                <li><a href="https://www.quickbuyer.in" target="_blank">QuickBuyer</a></li>
+            </ul>
+        </div>
     </div>
-    
 </body>
+<script src="/userDashboard.js"></script>
+<script type="module" src="./nav.js"></script>
+
 </html>
