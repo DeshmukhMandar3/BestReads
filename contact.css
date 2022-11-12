@@ -59,3 +59,7 @@ p{
 #contactdiv>#sendmessage:hover{
     background-color: green;
 }
+
+#navbar{
+    position: relative;
+}
