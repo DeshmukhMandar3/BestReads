@@ -10,7 +10,7 @@ body {
      background: url("/assets/youridea-23d18c0fab7feb4d66e4c1dbc419428c71b2014ff742fc52b4006f6b65af6b67.jpg") no-repeat center center;
      background-size: cover;
 } */
-p{
+#contactdiv>div>p{
     margin:auto;
     /* border:1px solid red; */
     text-align: center;
@@ -21,8 +21,8 @@ p{
 
 #contactdiv{
     /* padding: 30px; */
-    /* margin: auto; */
-    position:absolute;
+    margin: auto;
+    /* position:absolute; */
     width: 40%;
     padding: 40px;
     text-align: center;
@@ -59,6 +59,54 @@ p{
 #contactdiv>#sendmessage:hover{
     background-color: green;
 }
+
+
+/* footer */
+
+#footer{
+    margin-top:105px;
+    background-color:rgb(227, 243, 238);
+    display: flex;
+    width:100%;
+    /* border:1px solid red */
+}
+#f-logo{
+    width:20%;
+    margin-left:15px;
+    margin-top:20px;
+}
+#f-logo>img{
+    width:100%;
+}
+
+#content{
+    width:40%;
+    margin-left:15px;
+    font-family: arial;
+    font-size:15px;
+
+}
+#left{
+    border-right:solid 1px rgb(100, 98, 98);
+    width:60%;
+    margin-bottom:25px;
+    margin-top:25px;
+    margin-left:25px;
+}
+#right{
+    margin-left:45px;
+    margin-top:25px;
+}
+#right a{
+    font-family: arial;
+    font-size:15px;
+    text-decoration: none;
+}
+
+@media all and (max-width: 750px) and (min-width:300px) {
+   #container{grid-template-columns:repeat(2,1fr);}
+   .sub{display:none;}
+  }
 
 #navbar{
     position: relative;
