@@ -33,15 +33,15 @@ if (local_name != null) {
 
 
 let create_btn=document.getElementById("sendmessage");
-create_btn.onclick=()=>{
+create_btn.onclick=(e)=>{
 
 
-    CreateMessage()
+    CreateMessage(e)
 }
 
 
-const CreateMessage=async()=>{
-    // event.preventDefault()
+const CreateMessage=async(event)=>{
+     event.preventDefault()
 console.log("send message")
     let firstname_id=document.getElementById("firstname").value;
     // if(firstname_id=="")
@@ -62,7 +62,7 @@ console.log("send message")
     }
     console.log(sendData)
 
-    let response = await fetch ("http://localhost:3000/posts", {
+    let response = await fetch ("http://localhost:3000/sms", {
         method: "POST",
         body: JSON.stringify(sendData),
         headers: {
