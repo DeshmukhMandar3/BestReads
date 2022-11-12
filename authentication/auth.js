@@ -101,8 +101,7 @@ const getUserData = async (username, token) => {
     let usertag = document.getElementById("usertag");
     usertag.innerText = data.username;
 
-    localStorage.setItem("usName", data.username);
-}
+
 
 
 

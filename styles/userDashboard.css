@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial;
 }
 #main_div{
     width: 80%;
@@ -227,5 +228,20 @@ td,th{
     line-height: 18px;
     color: #337ab7;
 
+
+}
+
+#main{
+    width: 100%;
+   margin: 20px;
+   
+}
+#msg{
+    width: 70%;
+    margin: auto;
+
+}
+#feeds{
+    text-align: center;
 
 }

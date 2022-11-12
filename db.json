@@ -1,7 +1,5 @@
 {
-  "posts": [
-        
-  ],
+  "posts": [],
   "comments": [
     {
       "id": 1,
@@ -9,6 +7,33 @@
       "postId": 1
     }
   ],
+  "sms": [
+    {
+      "first_name": "Mohammad ",
+      "Last_name": "Rizwan",
+      "email": "xyz@gmail.com",
+      "Phone": "9999999786",
+      "Message": "Nice product but need to  add  some thing spacial",
+      "id": 1
+    },
+    {
+      "first_name": "Mohammad ",
+      "Last_name": "Rizwan",
+      "email": "xyz@gmail.com",
+      "Phone": "9999999786",
+      "Message": "Nice product but need to  add  some thing spacial",
+      "id": 2
+    },
+    {
+      "first_name": "Mohammad ",
+      "Last_name": "Rizwan",
+      "email": "xyz@gmail.com",
+      "Phone": "9999999786",
+      "Message": "Nice product but need to  add  some thing spacial",
+      "id": 3
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
+}

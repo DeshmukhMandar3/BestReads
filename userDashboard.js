@@ -65,10 +65,10 @@ const getData=async(e)=>{
         platform:form.platform.value,
         website:form.shop.value,
     }
-   form.name=null;
-   form.exp=null;
-   form.file=null;
- let res= await fetch('http://localhost:3000/posts',{
+   form.name.value=null;
+   form.exp.value=null;
+   form.file.value=null;
+ let res= await fetch('https://my-nstagram.herokuapp.com/posts',{
     method: 'POST',
     body:JSON.stringify(obj),
     headers:{
@@ -86,7 +86,7 @@ const getData=async(e)=>{
 // products start 
 let body=document.getElementsByName('tbody');
 const showData=async()=>{
-    let res=await fetch(' http://localhost:3000/posts')
+    let res=await fetch(' https://my-nstagram.herokuapp.com/posts')
     let data= await res.json();
     console.log(data);
     
@@ -125,7 +125,7 @@ const getStatus=async()=>{
     let apr=document.getElementById('approved');
     let faild=document.getElementById('faild');
     let review=document.getElementById('reviewe');
-    let res = await fetch('http://localhost:3000/posts')
+    let res = await fetch('https://my-nstagram.herokuapp.com/posts')
     let data= await res.json();
     let count=0;
     let c=0;
