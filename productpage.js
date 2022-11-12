@@ -1,9 +1,50 @@
+
+    // navbar code snippet end
+
+    import { navbar_fn } from "./components/navbar.js"
+    let nav_div = document.getElementById("navbar");
+    nav_div.innerHTML = navbar_fn();
+    
+    // navbar code snippet start
+    let ddn_btn = document.querySelector(".ddn-name");
+    ddn_btn.onclick = () => {
+        let dropdown_class = document.getElementById("dropdown-content");
+        show_hide(dropdown_class);
+    }
+    
+    let signIn_btn = document.getElementById("SignIn");
+    signIn_btn.onclick = () => {
+        let SignIn_class = document.getElementById("signIn-ddn");
+        show_hide(SignIn_class);
+    }
+    const show_hide = (list) => {
+    
+        list.classList.toggle("show");
+    }
+    //when user logins, set item with local_name as key and name of user as value in local storage
+    let local_name = localStorage.getItem("local_name");
+    if (local_name != null) {
+        let log_btn = document.getElementById("log-name");
+        log_btn.innerText = local_name;
+        let ddn_name = document.querySelector(".ddn-name");
+        ddn_name.style.display = "block";
+        let sign = document.getElementById("sign")
+        sign.style.display = "none";
+        let sign_up = document.getElementById("sign-up")
+        sign_up.style.display = "none";
+    }
+
+
+
+
+
 let data = JSON.parse(localStorage.getItem("bookdetails")) || [];
 // console.log(data)
 const append=(data)=>{
     let container=document.getElementById("container1");
     let container2=document.getElementById("container2");
     container.innerHTML=null;
+    container2.innerHTML=null;
     
     
 
@@ -16,14 +57,16 @@ const append=(data)=>{
 
         let constant = document.createElement("p");
         constant.innerText = "Buy it at best price from here"
+        constant.style.fontWeight="bold"
         constant.setAttribute("class","constant")
 
         let price = document.createElement("p")
+        price.setAttribute("class","price");
         if(data.saleInfo.saleability== "FOR_SALE"){
-        price.innerText="Rs: "+(data.saleInfo.listPrice.amount);
+        price.innerText="Rs "+(data.saleInfo.listPrice.amount);
         }
         else{
-            price.innerText="Rs.:NOT FOR SALE "  
+            price.innerText="Not For Sale "  
         }
         
         // let Specification = document.createElement('h3')
@@ -57,12 +100,20 @@ const append=(data)=>{
         // more_details.onclick=()=>{
         //     see_details(el);
         // }
-
+        
+        let btn = document.createElement("btn")
+        btn.innerText="Buy Now"
+        btn.setAttribute("class","btn")
+        btn.style.cursor="Pointer"
+        btn.onclick=()=>{
+            Namesearch(data.volumeInfo.title)
+        }
+        
         
         card.append(image,constant,price,);
         container.append(card);
        
-        container2.append(name,description)
+        container2.append(name,description,btn)
 
 
        let tbody = document.querySelector("tbody")
@@ -131,16 +182,17 @@ const append=(data)=>{
       tr6.append(td11,td12)
       tr7.append(td13,td14)
      tbody.append(tr1,tr2,tr3,tr4,tr5,tr6,tr7)
-        
+     
+         
 
 }
 
 append(data)
 
-let btn = document.getElementById("btn")
-btn.onclick=()=>{
-    Namesearch(data.volumeInfo.title)
-}
+// let btn = document.getElementById("btn")
+// btn.onclick=()=>{
+//     Namesearch(data.volumeInfo.title)
+// }
 
 const Namesearch =(el) => {
    
@@ -164,9 +216,12 @@ const appendtable=(data)=>{
   data.forEach((el)=>{
 
     let tr1 = document.createElement('tr')
-    
+    tr1.setAttribute("class","tr1")
    let td3=document.createElement('td')
    td3.innerText=el.volumeInfo.title;
+   td3.style.color="rgb(113,161,203)"
+   td3.style.cursor="Pointer"
+   td3.style.textDecoration="underline"
    td3.onclick=()=>{
     append(el)
 }
@@ -178,6 +233,7 @@ const appendtable=(data)=>{
     td2.innerText="Paperback"
 
     tr1.append(td3,td1,td2)
+    
     tbody.append(tr1)
 
   })
