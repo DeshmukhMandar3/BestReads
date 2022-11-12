@@ -1,3 +1,8 @@
+
+
+
+
+
 class User {
     constructor() {
 
@@ -37,7 +42,7 @@ class User {
                 body: JSON.stringify(this),
 
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json'
                 },
 
 
@@ -49,12 +54,12 @@ class User {
 
         }
     }
-};
+}
 
 let user = new User()
 
 
-const Register = () => {
+const register = () => {
 
     const new_user = document.getElementById("new_user");
 

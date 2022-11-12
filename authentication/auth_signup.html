@@ -6,10 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="auth_signin.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
 </head>
-<link rel="stylesheet" href="auth_signin.css">
+
 
 <body>
+
+    <div id="navbar" class="navbar">
+
+        <!-- div for navbar import -->
+    </div>
+
     <div class="container">
         <h2>Sign up</h2>
         <form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post">
@@ -42,10 +54,11 @@
                     name="user[password_confirmation]" id="user_password_confirmation" />
             </div>
             <div class="actions form-group">
-                <input type="submit" name="commit" value="Sign up" class="btn btn-success"
-                    data-disable-with="Sign up" />
+                <button onclick="register()" name="commit" value="Sign up" class="btn btn-success"
+                    data-disable-with="Sign up" /> Sign up</button>
             </div>
         </form>
+
         <a href="./auth_signin.html">Log in</a>
 
         <div class="gettoknow">
@@ -65,3 +78,5 @@
 </body>
 
 </html>
+<script type="module" src="./auth_nav.js"></script>
+<script src="./auth.js"></script>
