@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0px;
     padding: 0px;
 }
@@ -11,13 +11,15 @@
     font-size: 15px;
     line-height: 1.5;
     color: black;
+    margin-top: 0px;
+    padding-top: 50px;
 
 }
 
 .container>h2,
 h1 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 500;
 }

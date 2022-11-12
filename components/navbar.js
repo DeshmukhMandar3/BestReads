@@ -22,11 +22,11 @@ function navbar_fn() {
 
 
             <div id="signIn-ddn" class="signIn-ddn">
-                <a href="./authentication/auth_signin.html" class="sign">Sign In as Customer</a>
+                <a href="../authentication/auth_signin.html" class="sign">Sign In as Customer</a>
                 <a href="" class="sign">Sign In as Admin</a>
             </div>
         </div>
-        <a href="./authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
+        <a href="../authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
         <div class="dropdown">
             <div class="ddn-name">
                 <button id="log-name"></button>

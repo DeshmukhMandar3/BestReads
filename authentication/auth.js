@@ -2,7 +2,6 @@
 
 
 
-
 class User {
     constructor() {
 
@@ -54,7 +53,33 @@ class User {
 
         }
     }
+
+    async Login(e, p) {
+
+
+        const login_data = {
+            username: e,
+            password: p,
+        };
+
+        const login_api = "https://masai-api-mocker.herokuapp.com/auth/login"
+
+        const response = await fetch(login_api, {
+
+            method: "POST",
+            body: JSON.stringify(login_data),
+
+            headers: {
+                'content_type': 'application/json',
+            },
+        });
+
+        const data = await response.json();
+        console.log('data:', data)
+    }
 }
+
+
 
 let user = new User()
 
@@ -72,3 +97,10 @@ const register = () => {
     user.signUp(name, mobile, email, password);
     console.log('user:', user);
 };
+
+const Login = () => {
+
+    const
+}
+
+
