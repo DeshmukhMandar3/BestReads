@@ -30,10 +30,45 @@ if (local_name != null) {
     let sign_up = document.getElementById("sign-up")
     sign_up.style.display = "none";
 }
-let logo = document.getElementById('logo');
-logo.onclick = () => {
-    goTo();
+
+
+let create_btn=document.getElementById("sendmessage");
+create_btn.onclick=()=>{
+
+
+    CreateMessage()
 }
-const goTo = () => {
-    window.location.href = 'index.html';
+
+
+const CreateMessage=async()=>{
+    // event.preventDefault()
+console.log("send message")
+    let firstname_id=document.getElementById("firstname").value;
+    // if(firstname_id=="")
+    // {
+    //     alert("please enter the firstname")
+    // }
+    let lastname_id=document.getElementById("lastname").value;
+     let email_id=document.getElementById("email").value;
+     let Phone_id=document.getElementById("Phone").value;
+     let Message_id=document.getElementById("Message").value;
+
+    let sendData = {
+        first_name : firstname_id,
+        Last_name: lastname_id,
+        email: email_id,
+        Phone:Phone_id,
+        Message:Message_id
+    }
+    console.log(sendData)
+
+    let response = await fetch ("http://localhost:3000/posts", {
+        method: "POST",
+        body: JSON.stringify(sendData),
+        headers: {
+            "Content-Type" :"application/json"
+        }
+    })
+    let data = await response.json();
+    console.log(data)
 }

@@ -30,10 +30,6 @@ if (local_name != null) {
     let sign_up = document.getElementById("sign-up")
     sign_up.style.display = "none";
 }
-let logo = document.getElementById('logo');
-logo.onclick = () => {
-    goTo();
-}
-const goTo = () => {
-    window.location.href = 'index.html';
-}
+
+
+// navbar code snippet end

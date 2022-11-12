@@ -1,23 +1,6 @@
 {
   "posts": [
-    {
-      "id": 1668146558052,
-      "name": "Designing Data – Insensitive applications",
-      "exp": "System design today faces many challenges when it comes to data, including scalability, consistency, reliability, efficiency, and maintainability. Also, it’s hard to determine which tool, out of the many available (such as batch processors, message brokers, etc), is right for your application. What does all this jargon mean?\n\nIn this book, author Martin Kleppmann walks you through the pros and cons of various technologies for processing and storing data. The book meticulously presents an encyclopedic overview of data storage systems, from fundamental concepts and algorithms to practical applications and specifics of various technologies. By combining the knowledge of seasoned system architects, this book will help newcomers accelerate their learning processes. In his writing, the author perfectly blends theory and practical applications. It’s a must-read for anyone interested in distributed systems, database internals, or big data. There’s so much more to this book than you might expect.",
-      "thumbnil": "https://i.ibb.co/TPYdbb6/A5-F05559-1721-4-B16-9-E78-09-A836-D0-CCA0.jpg",
-      "status": false,
-      "platform": "Online",
-      "website": "Flipkart"
-    },
-    {
-      "id": 1668147800835,
-      "name": "Ethical Hacking Books for Beginner to Intermediate",
-      "exp": "This is a solid foundational book for beginners and best books learn hacking including freshers who have no idea about networking, security, hacking, etc. The author uses simple and effective language and gives thorough explanations of the various concepts. It is mostly a theory book and doesn’t have much implementation or techniques explained. It is a good book to overview all the high-level hacking concepts like security testing, various tools, penetration testing techniques, mobile security, and ways to protect networks",
-      "thumbnil": "https://i.ibb.co/wCYNFXS/hands-on-ethical-hacking-and-network-defense.jpg",
-      "status": true,
-      "platform": "Online",
-      "website": "Amazon"
-    }
+        
   ],
   "comments": [
     {
