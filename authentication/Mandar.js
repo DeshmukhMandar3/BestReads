@@ -1,18 +1,12 @@
 
 //signup
-const validateEmail = (email) => {
-    return email.includes("@") ? true : false;
-}
-
 const validateUser = (u) => {
     return u.includes("@") ? false : true;
 }
 
-const validatePassword = (password) => {
-    return password.length < 8 ? false : true;
+const validatePass = (p) => {
+    return p.length < 8 ? false : true;
 }
-
-
 
 let reg_btn = document.getElementById("reg-btn");
 reg_btn.onclick = (element) => {
@@ -25,12 +19,12 @@ reg_btn.onclick = (element) => {
     let mobile = form.mobile.value;
     let description = form.description.value;
 
-
-    if (validateUser(username) && validatePassword(password)) {
+    if (validateUser(username) && validatePass(password)) {
         SignUp(name, email, password, username, mobile, description);
     }
 
 }
+
 
 const SignUp = async (name, email, password, username, mobile, description) => {
     let send_data = {
@@ -53,8 +47,6 @@ const SignUp = async (name, email, password, username, mobile, description) => {
     let data = await res.json();
     console.log(data);
 }
-
-//  -------------------------------------------------------------   //
 
 //Login
 let Log_btn = document.getElementById("Log-btn");
@@ -101,7 +93,5 @@ const getUserData = async (username, token) => {
     let usertag = document.getElementById("usertag");
     usertag.innerText = data.username;
 
-
-
-
-
+    localStorage.setItem("usName", data.username);
+}

@@ -24,39 +24,35 @@
 
     <div class="container">
         <h2>Sign up</h2>
-        <form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post">
+        <form class="new_user" id="register">
 
-            <div class="form-group">
-                <label for="user_name">Name</label>
-                <input autofocus="autofocus" class="form-control" required="required" type="text" name="user[name]"
-                    id="user_name" />
-            </div>
-            <div class="form-group">
-                <label for="user_Mobile Number">Mobile number</label>
-                <input autofocus="autofocus" class="form-control" required="required" type="text"
-                    name="user[mobile_number]" id="user_mobile_number" />
-            </div>
-            <div class="form-group">
-                <label for="user_email">Email</label>
-                <input autofocus="autofocus" class="form-control" required="required" type="email" value=""
-                    name="user[email]" id="user_email" />
-            </div>
-            <div class="form-group">
-                <label for="user_password">Password</label>
-                <em>(6 characters minimum)</em>
-                <br />
-                <input autocomplete="off" class="form-control" required="required" type="password" name="user[password]"
-                    id="user_password" />
-            </div>
-            <div class="form-group">
-                <label for="user_password_confirmation">Password confirmation</label>
-                <input autocomplete="off" class="form-control" required="required" type="password"
-                    name="user[password_confirmation]" id="user_password_confirmation" />
-            </div>
-            <div class="actions form-group">
-                <button onclick="register()" name="commit" value="Sign up" class="btn btn-success"
-                    data-disable-with="Sign up" /> Sign up</button>
-            </div>
+            <label for="name">Name</label>
+            <input autofocus="autofocus" class="form-control form-group" required="required" type="text" id="name" />
+
+            <label for="email">Email</label>
+            <input autofocus="autofocus" class="form-control form-group" required="required" type="email" value=""
+                id="email" />
+
+            <label for="password">Password</label>
+            <em>(6 characters minimum)</em>
+            <br />
+            <input autocomplete="off" class="form-control form-group" required="required" type="password"
+                id="password" />
+
+            <label for="username">Username</label>
+            <input autofocus="autofocus" class="form-control form-group" required="required" type="text"
+                id="username" />
+
+
+            <label for="mobile">Mobile number</label>
+            <input autofocus="autofocus" class="form-control form-group" required="required" type="text" id="mobile" />
+
+            <label for="description">Description</label>
+            <input autofocus="autofocus" class="form-control form-group" required="required" type="text"
+                id="description" />
+
+            <button class="btn actions form-group" id="reg-btn">Sign Up </button>
+
         </form>
 
         <a href="./auth_signin.html">Log in</a>
@@ -77,5 +73,5 @@
 </body>
 
 </html>
-<script src="./auth.js"></script>
+<script src="auth.js"></script>
 <script type="module" src="../nav.js"></script>

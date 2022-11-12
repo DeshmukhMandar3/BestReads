@@ -18,18 +18,18 @@
 
     <div class="container">
         <h2>Log in</h2>
-        <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input
-                name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token"
+        <form class="new_user" id="login">
+            <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token"
                 value="qTp6qesoKQKTyCUI87Pj50J6ROOxGu5dJCeHzTh7onalDsztT3dr87UIk4kwXmHfIoMBc8O3MSf2pv17XAPDXQ==" />
+
+
             <div class="form-group">
-                <label for="user_email">Email</label><br />
-                <input autofocus="autofocus" class="form-control" type="email" value="" name="user[email]"
-                    id="user_email" />
+                <label for="Lusername">Username</label><br />
+                <input autofocus="autofocus" class="form-control" type="text" value="" name="username" id="Lusername" />
             </div>
             <div class="form-group">
-                <label for="user_password">Password</label><br />
-                <input autocomplete="off" class="form-control" type="password" name="user[password]"
-                    id="user_password" />
+                <label for="Lpassword">Password</label><br />
+                <input autocomplete="off" class="form-control" type="password" name="user[password]" id="Lpassword" />
             </div>
             <div class="form-group">
                 <input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1"
@@ -37,7 +37,8 @@
                 <label for="user_remember_me">Remember me</label>
             </div>
             <div class="actions form-group">
-                <input type="submit" name="commit" value="Log in" class="btn btn-success" data-disable-with="Log in" />
+                <button type="submit" name="commit" value="Log in" class="btn btn-success" id="Log-btn"
+                    data-disable-with="Log in">Log in </button>
             </div>
         </form>
         <a href="./auth_signup.html">Sign up</a>
@@ -63,3 +64,4 @@
 
 </html>
 <script type="module" src="../nav.js"></script>
+<script src="authlogIn.js"></script>
