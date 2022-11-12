@@ -1,0 +1,61 @@
+body {
+    background: url(https://wallpaperaccess.com/full/2314983.jpg);
+    /* background: url("/assets/youridea-23d18c0fab7feb4d66e4c1dbc419428c71b2014ff742fc52b4006f6b65af6b67.jpg"); */
+    background-size: cover;
+}
+/* body{
+    padding-top: 0px;
+     padding-bottom: 400px;
+     text-align: center;
+     background: url("/assets/youridea-23d18c0fab7feb4d66e4c1dbc419428c71b2014ff742fc52b4006f6b65af6b67.jpg") no-repeat center center;
+     background-size: cover;
+} */
+p{
+    margin:auto;
+    /* border:1px solid red; */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#contactdiv{
+    /* padding: 30px; */
+    /* margin: auto; */
+    position:absolute;
+    width: 40%;
+    padding: 40px;
+    text-align: center;
+    left: 30%;
+
+    
+    /* border:1px solid red */
+}
+#contactdiv>label{
+    /* margin:auto; */
+    /* border: 1px solid red; */
+    padding:20px
+}
+
+#contactdiv>input{
+    width:80%;
+    height:30px;
+    
+}
+
+#contactdiv>#Message
+{
+    height:50px
+}
+
+#contactdiv>#sendmessage{
+    width:auto;
+    border-radius: 5px;
+    border: 0;
+    background-color:#5cb85c;
+    color:white;
+}
+
+#contactdiv>#sendmessage:hover{
+    background-color: green;
+}
