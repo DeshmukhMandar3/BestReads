@@ -230,6 +230,7 @@ td,th{
 
 
 }
+
 #main{
     width: 100%;
    margin: 20px;
@@ -242,4 +243,5 @@ td,th{
 }
 #feeds{
     text-align: center;
+
 }

@@ -15,18 +15,21 @@ function navbar_fn() {
 
 
     <div id="links" class="links">
-        <a href="about.html">About</a>
-        <a href="/contact.html">Contact</a>
+
+
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+
         <div class="sign" id="sign">
             <button id="SignIn">Sing In</button>
 
 
             <div id="signIn-ddn" class="signIn-ddn">
-                <a href="../authentication/auth_signin.html" class="sign">Sign In as Customer</a>
-                <a href="" class="sign">Sign In as Admin</a>
+                <a href="./authentication/auth_signin.html" class="sign">Sign In as Customer</a>
+                <a href="./authentication/auth_signin.html" class="sign">Sign In as Admin</a>
             </div>
         </div>
-        <a href="../authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
+        <a href="./authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
         <div class="dropdown">
             <div class="ddn-name">
                 <button id="log-name"></button>
