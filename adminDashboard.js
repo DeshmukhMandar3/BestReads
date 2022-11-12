@@ -1,5 +1,5 @@
 const getSms=async()=>{
-    let res= await fetch('http://localhost:3000/sms')
+    let res= await fetch('https://my-nstagram.herokuapp.com/sms')
     let sms=await res.json();
     appendSms(sms);
 }

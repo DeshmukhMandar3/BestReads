@@ -62,7 +62,7 @@ console.log("send message")
     }
     console.log(sendData)
 
-    let response = await fetch ("http://localhost:3000/sms", {
+    let response = await fetch ("https://my-nstagram.herokuapp.com/sms", {
         method: "POST",
         body: JSON.stringify(sendData),
         headers: {
