@@ -15,8 +15,11 @@ function navbar_fn() {
 
 
     <div id="links" class="links">
+
+
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
+
         <div class="sign" id="sign">
             <button id="SignIn">Sing In</button>
 
