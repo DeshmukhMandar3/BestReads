@@ -37,3 +37,7 @@ logo.onclick = () => {
 const goTo = () => {
     window.location.href = 'index.html';
 }
+let si_out = document.getElementById("sign_out");
+si_out.onclick = () => {
+    localStorage.clear();
+}

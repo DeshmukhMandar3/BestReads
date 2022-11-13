@@ -25,3 +25,8 @@ const appendSms=(sms)=>{
 window.addEventListener('load', (event) => {
     getSms();
   });
+
+  let si_out = document.getElementById("sign_out");
+si_out.onclick = () => {
+    localStorage.clear();
+}

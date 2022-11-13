@@ -110,6 +110,7 @@ table {
     width: 100%;
     margin: 20px;
     border: 1px solid;
+    word-wrap: break-word;
 
 }
 td,th{
@@ -237,11 +238,19 @@ td,th{
    
 }
 #msg{
-    width: 70%;
+    width: 90%;
     margin: auto;
 
+}
+#msg>table{
+    width:100%;
+    margin-left:0px;
+    word-wrap: break-word;
 }
 #feeds{
     text-align: center;
 
+}
+#navbar{
+    position: relative;
 }

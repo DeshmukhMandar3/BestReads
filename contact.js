@@ -71,4 +71,15 @@ console.log("send message")
     })
     let data = await response.json();
     console.log(data)
+    document.getElementById("firstname").value=null;
+ document.getElementById("lastname").value=null;
+document.getElementById("email").value=null;
+     document.getElementById("Phone").value=null;
+    document.getElementById("Message").value=null;
+    alert("Thank you! your response has been recorded we will reach you out soon ");
+}
+
+let si_out = document.getElementById("sign_out");
+si_out.onclick = () => {
+    localStorage.clear();
 }

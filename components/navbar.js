@@ -25,11 +25,11 @@ function navbar_fn() {
 
 
             <div id="signIn-ddn" class="signIn-ddn">
-                <a href="./authentication/auth_signin.html" class="sign">Sign In as Customer</a>
-                <a href="./authentication/auth_signin.html" class="sign">Sign In as Admin</a>
+                <a href="./auth_signin.html" class="sign">Sign In as Customer</a>
+                <a href="./auth_signin.html" class="sign">Sign In as Admin</a>
             </div>
         </div>
-        <a href="./authentication/auth_signup.html" class="sign" id="sign-up">Sign Up</a>
+        <a href="./auth_signup.html" class="sign" id="sign-up">Sign Up</a>
         <div class="dropdown">
             <div class="ddn-name">
                 <button id="log-name"></button>
@@ -37,6 +37,7 @@ function navbar_fn() {
             </div>
             <div id="dropdown-content" class="dropdown-content">
                 <a href="./userDashboard.html">Dashboard</a>
+                <a href="./adminDashboard.html">Admin</a>
                 <a href="" id="sign_out">Sign Out</a>
             </div>
 
