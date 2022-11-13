@@ -41,6 +41,7 @@ const getUserData = async (username, token) => {
 
 
     localStorage.setItem("local_name", data.username);
+    window.open("/index.html","_self");
 }
 let local_name = localStorage.getItem("local_name");
 if (local_name != null) {

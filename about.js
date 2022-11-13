@@ -33,3 +33,8 @@ if (local_name != null) {
 
 
 // navbar code snippet end
+
+let si_out = document.getElementById("sign_out");
+si_out.onclick = () => {
+    localStorage.clear();
+}

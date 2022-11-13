@@ -9,7 +9,7 @@ body{
 }
 .image{
     display: block;
-    width: 300px;
+    width: 250px;
     margin: auto;
     margin-top: 20px;
     
@@ -84,3 +84,47 @@ tbody tr{
     padding-bottom: 5px;
     
 }
+
+
+#footer{
+    margin-top:105px;
+    background-color:rgb(227, 243, 238);
+    display: flex;
+}
+#f-logo{
+    width:20%;
+    margin-left:15px;
+    margin-top:20px;
+}
+#f-logo>img{
+    width:100%;
+}
+
+#content{
+    width:40%;
+    margin-left:15px;
+    font-family: arial;
+    font-size:15px;
+
+}
+#left{
+    border-right:solid 1px rgb(100, 98, 98);
+    width:60%;
+    margin-bottom:25px;
+    margin-top:25px;
+    margin-left:25px;
+}
+#right{
+    margin-left:45px;
+    margin-top:25px;
+}
+#right a{
+    font-family: arial;
+    font-size:15px;
+    text-decoration: none;
+}
+
+
+
+
+

@@ -146,5 +146,10 @@ const getStatus=async()=>{
 getStatus();
 
 
-
+let si_out = document.getElementById("sign_out");
+si_out.onclick = () => {
+    window.location.href="index.html";
+    localStorage.clear();
+  
+}
 

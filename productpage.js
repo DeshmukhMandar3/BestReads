@@ -242,3 +242,7 @@ const appendtable=(data)=>{
 
 }
 
+// let si_out = document.getElementById("sign_out");
+// si_out.onclick = () => {
+//     localStorage.clear();
+// }
