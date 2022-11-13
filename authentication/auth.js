@@ -96,11 +96,12 @@ const getUserData = async (username, token) => {
 
     let data = await res.json();
     console.log(data);
-    let create_btn = document.getElementById("submit_btn");
-    create_btn.style.display = "block";
-    let usertag = document.getElementById("usertag");
-    usertag.innerText = data.username;
 
+
+
+
+
+}
 
 
 
