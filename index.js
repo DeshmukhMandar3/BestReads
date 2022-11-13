@@ -1,5 +1,5 @@
 
-    // navbar code snippet end
+// navbar code snippet end
 
 import { navbar_fn } from "./components/navbar.js"
 let nav_div = document.getElementById("navbar");
@@ -74,8 +74,9 @@ const append = (data) => {
 
         let image = document.createElement("img");
         image.setAttribute("class", "image");
-        if(el.volumeInfo.imageLinks){
-        image.src = (el.volumeInfo.imageLinks.thumbnail || "https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg");}
+        if (el.volumeInfo.imageLinks) {
+            image.src = (el.volumeInfo.imageLinks.thumbnail || "https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg");
+        }
 
         let name = document.createElement("h3");
         name.setAttribute("class", "name");
@@ -101,21 +102,23 @@ const append = (data) => {
         }
 
         bottom.append(rating, more_details);
-        if(el.volumeInfo.imageLinks){card.append(image, name, authors, bottom);
-            container.append(card);}
-        
+        if (el.volumeInfo.imageLinks) {
+            card.append(image, name, authors, bottom);
+            container.append(card);
+        }
+
     })
 
-    
-    }
 
-    const see_details=(el)=>{
-        let bookdetails=el;
-        localStorage.setItem("bookdetails",JSON.stringify(bookdetails));
-        window.open("./Productpage.html","_self");
-    }
+}
 
-    //Selecting Genre
+const see_details = (el) => {
+    let bookdetails = el;
+    localStorage.setItem("bookdetails", JSON.stringify(bookdetails));
+    window.open("./Productpage.html", "_self");
+}
+
+//Selecting Genre
 let sub = document.querySelector(".sub");
 let action = document.querySelector(".action");
 
@@ -181,18 +184,18 @@ const colorIt = (id) => {
     id.style.color = "black"
 }
 //This will search data as per subject
-const getByCategory =async(el) => {
-    let res=await fetch(`https://www.googleapis.com/books/v1/volumes?q=+subject:${el}&key=AIzaSyBPyy1Lx0veEyDixS2W3lh5qgCBOIZqb_c&&maxResults=40&&orderBy=relevance`);
-    let data=await res.json();
+const getByCategory = async (el) => {
+    let res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=+subject:${el}&key=AIzaSyBPyy1Lx0veEyDixS2W3lh5qgCBOIZqb_c&&maxResults=40&&orderBy=relevance`);
+    let data = await res.json();
     console.log(data.items);
     append(data.items);
-    
+
 }
 
 // localStorage.setItem("local_name","Mandar Deshmukh");
 
-let si_out=document.getElementById("sign_out");
-si_out.onclick=()=>{
+let si_out = document.getElementById("sign_out");
+si_out.onclick = () => {
     localStorage.clear();
 }
 //below link can be used to search books on amazon
